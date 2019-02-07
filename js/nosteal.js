@@ -15,7 +15,7 @@ window.onload = function(e){ //when images are loaded
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0,0.01);
+		background-color: rgba(0,0,0,0.001);
 	}`;
 
 	var nosteal_style = document.createElement('style');
