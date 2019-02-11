@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,47 @@
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Tajawal:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=source+sans+pro:300,400" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="dist/css/styles.min.css">
 </head>
+
 <body>
   <header>
     <h1>Nosteal</h1>
     <h2>Solution simple pour sécuriser les images d'un site web.</h2>
+    <a class="btn-github" href="https://github.com/pomfreshBzh/nosteal" target="_blank">
+      <img src="dist/img/GitHub-Mark-64px.png" alt="Logo GitHub">
+      <span>GitHub</span>
+    </a>
   </header>
   <section class="desc">
-    <p><strong>Nosteal</strong>, un petit bout de code javascript qui permet d'ajouter une sécurité basique à vos images.</p>
+    <p><strong>Nosteal</strong>, un petit bout de code javascript qui permet d'ajouter une sécurité basique à vos
+      images.</p>
     <p>Ce code permet de bloquer le vol de photos via un simple clic-droit.</p>
   </section>
   <section class="demo">
     <div class="content">
       <div class="item">
         <h4>Sans Nosteal</h4>
-        <!-- <img src="https://source.unsplash.com/800x600/?nature,water" alt="Une belle image provenant de unsplash"> -->
-        <img src="https://picsum.photos/800/600/?random" alt="Une belle image provenant de picsum.photos">
+        <img class="demo-nosteal" src="https://picsum.photos/800/600/?random" alt="Une belle image provenant de picsum.photos">
       </div>
       <div class="item">
         <h4>Avec Nosteal</h4>
-        <!-- <img src="https://source.unsplash.com/800x600/?nature,water" alt="Une belle image provenant de unsplash"> -->
-        <img class="nostealplease" src="https://picsum.photos/800/600/?random" alt="Une belle image provenant de picsum.photos">
+        <img class="demo-nosteal nostealplease" src="https://picsum.photos/800/600/?random"
+          alt="Une belle image provenant de picsum.photos">
       </div>
-
     </div>
     
-    <div class="download-wrapper">
-      <a href="nosteal.zip" class="btn-download">Télécharger nosteal.zip</a>
+    <div class="content">
+      <a class="btn-github" href="https://github.com/pomfreshBzh/nosteal" target="_blank">
+        <img src="dist/img/GitHub-Mark-64px.png" alt="Logo GitHub">
+        <span>GitHub</span>
+      </a>
     </div>
   </section>
+
   <footer>
     <p class="credit">Développé avec <span class="heart">&#10084;</span> par
       <a href="http://guerroue.fr" target="_blank"><strong>Dimitri Guerroué</strong></a>.
@@ -49,13 +58,14 @@
   </footer>
 
   <!-- Scripts -->
-  <script type="text/javascript" src="js/nosteal.js"></script>
+  <script type="text/javascript" src="dist/js/app.min.js"></script>
   <script type="text/javascript">
-    var imgs = document.querySelectorAll('img');
+    var imgs = document.querySelectorAll('img.demo-nosteal');
     rd = Math.floor((Math.random() * 1000) + 10);
-    imgs.forEach(function(elem){
-      elem.setAttribute("src","https://picsum.photos/800/600/?image="+rd);
+    imgs.forEach(function (elem) {
+      elem.setAttribute("src", "https://picsum.photos/800/600/?image=" + rd);
     })
   </script>
 </body>
+
 </html>

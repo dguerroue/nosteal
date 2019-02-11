@@ -1,0 +1,30 @@
+
+/////////////////////////
+/*_______ SIZES _______*/
+$gutter: 30px;
+$gutter-s: $gutter/3; // 10px
+$gutter-m: $gutter/2; // 15px
+$gutter-l: $gutter*2; // 60px
+$gutter-xl: $gutter*3; // 90px
+$gutter-xxl: $gutter*5; // 120px
+$gutter-3xl: $gutter*10; // 300px
+
+/* ---- Responsive sizes ---- */
+$phone : 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1400px;
+
+/////////////////////////
+/*_______ FONTS _______*/
+//@import "../../fonts/HKGrotesk/index.scss";
+$font-primary: 'Tajawal', sans-serif;
+$font-secondary: 'Source Sans Pro', sans-serif;
+
+//////////////////////////
+/*_______ COLORS _______*/
+// https://flatuicolors.com
+
+$color-bg: #FFF;
+$color-accent: #FDAFA3;
+$color-text: #363741;

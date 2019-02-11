@@ -1,4 +1,10 @@
-banner.jpg
-thumb.jpg
-thumb_c.jpg
-nosteal.zip
+node_modules
+.DS_Store
+docs/_book
+test/
+
+#BLANK_PROJECT
+*.bat
+gulpfile.js
+package.json
+package-lock.json

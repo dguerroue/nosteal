@@ -1,0 +1,35 @@
+/*!
+  *
+  * AUTHOR     : Dimitri GUERROUE
+  * CONTACT    : contact@guerroue.fr
+  * WEBSITE    : guerroue.fr
+  * DATE_CREAT : 00/00/0000
+  *
+*/
+
+//helpers
+//ex: variables, mixins, colors, sizes...
+@import "helpers/vars";
+@import "helpers/mixins";
+
+//base
+//ex: reset, typo...
+@import "base/typography";
+
+//layout
+// main section of the layout
+//ex: header, footer, navigation
+@import "layout/wraps";
+@import "layout/nav";
+@import "layout/header";
+@import "layout/sections";
+@import "layout/footer";
+
+//component
+//ex: buttons, cards...
+@import "components/buttons";
+
+//modules
+// External lib
+//ex: slider, loader, buttons...
+@import "modules/normalize";

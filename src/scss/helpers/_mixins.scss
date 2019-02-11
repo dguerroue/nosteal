@@ -1,0 +1,30 @@
+
+//////////////////////////
+/*_______ MIXINS _______*/
+
+@mixin gridCss($num-cols : 12) {
+  display: grid;
+  grid-template-columns: repeat($num-cols, 1fr);
+}
+
+// Mixins responsive
+@mixin med-phone() {
+    @media only screen and (max-width: $phone){
+        @content;
+    }
+}
+@mixin med-tablet() {
+    @media only screen and (min-width: $phone) and (max-width: $tablet){
+        @content;
+    }
+}
+@mixin med-laptop() {
+    @media only screen and (min-width: $tablet) and (max-width: $desktop){
+        @content;
+    }
+}
+@mixin med-desktop() {
+    @media only screen and (min-width: $desktop){
+        @content;
+    }
+}
